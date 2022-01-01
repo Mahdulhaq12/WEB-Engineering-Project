@@ -311,7 +311,7 @@ fieldset {
 }
 
 #error_message {
-    margin-button: 20px;
+    margin-bottom: 20px;
     background: #d31818;
     padding: 50px;
     text-align: center;
@@ -320,4 +320,13 @@ fieldset {
     border-radius: 30px;
     font-weight: bolder;
     color: black;
+}
+
+.submit-input
+{
+    border-radius:50px;
+     width: 100px; 
+     height: 50px;
+      background-color: rgb(12, 241, 12);  
+      font-style: bold;
 }

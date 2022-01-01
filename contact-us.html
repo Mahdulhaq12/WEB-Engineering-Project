@@ -12,7 +12,7 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <!-- <img src="logo.png" alt="" class="logo_img" /> -->
+        <img src="logo.png" alt="" class="logo_img" />
 
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -26,9 +26,9 @@
     <div class="container">
 
       <form id="contact" action="" method="post" onsubmit="return validate();">
-      <div id="error_message">
+      <!-- <div id="error_message">
      
-    </div>
+    </div> -->
 
         <h3>Contact-us Form</h3>
         <h4>Contact us for your feedback or for more details</h4>
@@ -40,6 +40,7 @@
             required
             autofocus
             class="name"
+            name="name"
             id="name"
             
           />
@@ -51,18 +52,17 @@
             tabindex="2"
             required
             class="email"
+            name="email"
             id="email"
           />
         </fieldset>
         <fieldset>
           <input
             placeholder="Your Phone Number (optional)"
-            type="tel"
+            type="text"
             tabindex="3"
             required
-
             class="input-class"
-                 
              name="phone"
              id = "phone"
  />
@@ -76,34 +76,24 @@
             class="input-class"
             style="height: 200px;"
             id="message"
+            name="message"
           ></textarea>
         </fieldset>
 
         </fieldset>
         <fieldset style="text-align: center;">
           <span>Would you like to receive news letters</span><br>
-          <span >Yes</span> <input type="radio" id="yes" required name="notification" value="y">
-          <span>No</span><input type="radio" id="no" required name="notification" value="n">
+          <span >Yes</span> <input type="radio" id="yes" required name="notification" value="Yes">
+          <span>No</span><input type="radio" id="no" required name="notification" value="No">
         </fieldset>
 
         <fieldset>
 
           
-          <input type="submit" name="submit" id="submit-contact" style="border-radius:50px; width: 100px; height: 50px; background-color: rgb(12, 241, 12);  font-style: bold;">
+          <input type="submit" name="submit" id="submit-contact" class="submit-input" >
               
           
           </fieldset>
-
-          <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            
-            style="border-radius: 50px;"
-            
-          >
-            Submit
-          </button>
 
       </form>
     </div>
