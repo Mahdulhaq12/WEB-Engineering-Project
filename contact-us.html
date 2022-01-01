@@ -25,11 +25,11 @@
 
     <div class="container">
 
+      <form id="contact" action="" method="post" onsubmit="return validate();">
       <div id="error_message">
      
-  </div>
+    </div>
 
-      <form  action="" id="contact" onsubmit="return validate();">
         <h3>Contact-us Form</h3>
         <h4>Contact us for your feedback or for more details</h4>
         <fieldset>
@@ -60,8 +60,16 @@
             type="tel"
             tabindex="3"
             required
+
+            class="input-class"
+<<<<<<< HEAD
+=======
+			name="phone"
+
             class="phone"
             id="phone"
+
+>>>>>>> 34cb2f2c7102bcd04abf5b91a439606470c2630e
           />
         </fieldset>
 
@@ -77,12 +85,20 @@
         </fieldset>
 
         </fieldset>
-        <fieldset>
-          <span>Would you like to receive news letters</span>
-          <input type="checkbox" >
+        <fieldset style="text-align: center;">
+          <span>Would you like to receive news letters</span><br>
+          <span >Yes</span> <input type="radio" id="yes" required name="notification" value="y">
+          <span>No</span><input type="radio" id="no" required name="notification" value="n">
         </fieldset>
 
         <fieldset>
+
+          
+          <input type="submit" name="submit" id="submit-contact" style="border-radius:50px; width: 100px; height: 50px; background-color: rgb(12, 241, 12);  font-style: bold;">
+              
+          
+          </fieldset>
+
           <button
             name="submit"
             type="submit"
@@ -93,6 +109,7 @@
           >
             Submit
           </button>
+
       </form>
     </div>
     <footer class="footer-distributed">
