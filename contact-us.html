@@ -11,23 +11,29 @@
 
   <body>
     <div class="navbar">
-      
+      <div class="logo">
+        <!-- <img src="logo.png" alt="" class="logo_img" /> -->
+
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/cryptocurrency.html">Cryptocurrencies</a></li>
-          <li><a href="/about-us.html">About-us</a></li>
-          <li><a href="/contact-us.html">Contact-us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cryptocurrency.html">Cryptocurrencies</a></li>
+          <li><a href="about-us.html">About-us</a></li>
+          <li><a href="contact-us.html">Contact-us</a></li>
         </ul>
       </div>
- 
+    </div>
 
     <div class="container">
+
+      <form id="contact" action="contactus.php" method="post" >
+
 
       <div id="error_message">
      
   </div>
 
       <form  action="" id="contact" onsubmit="return validate();">
+
         <h3>Contact-us Form</h3>
         <h4>Contact us for your feedback or for more details</h4>
         <fieldset>
@@ -36,6 +42,8 @@
             type="text"
             tabindex="1"
             required
+            id="name"
+            name="name"
             autofocus
             class="name"
             id="name"
@@ -47,6 +55,8 @@
             placeholder="Your Email Address"
             type="email"
             tabindex="2"
+            id="email"
+            name="email"
             required
             class="email"
             id="email"
@@ -55,11 +65,17 @@
         <fieldset>
           <input
             placeholder="Your Phone Number (optional)"
-            type="tel"
+            type="text"
             tabindex="3"
+			name="phone"
             required
+
+            class="input-class"
+			name="phone"
+
             class="phone"
             id="phone"
+
           />
         </fieldset>
 
@@ -68,6 +84,8 @@
             placeholder="Type your message here...."
             tabindex="5"
             required
+            name="message"
+            id="message"
             class="input-class"
             style="height: 200px;"
             id="message"
@@ -75,12 +93,20 @@
         </fieldset>
 
         </fieldset>
-        <fieldset>
-          <span>Would you like to receive news letters</span>
-          <input type="checkbox" >
+        <fieldset style="text-align: center;">
+          <span>Would you like to receive news letters</span><br>
+          <span >Yes</span> <input type="radio" id="yes" required name="notification" value="y">
+          <span>No</span><input type="radio" id="no" required name="notification" value="n">
         </fieldset>
 
         <fieldset>
+
+          
+          <input type="submit" name="submit" id="submit-contact" style="border-radius:50px; width: 100px; height: 50px; background-color: rgb(12, 241, 12);  font-style: bold;">
+              
+          
+          </fieldset>
+
           <button
             name="submit"
             type="submit"
@@ -91,6 +117,7 @@
           >
             Submit
           </button>
+
       </form>
     </div>
     <footer class="footer-distributed">
@@ -100,13 +127,13 @@
 				<h3>About<span>CryptoX</span></h3>
 
 				<p class="footer-links">
-					<a href="/index.html">Home</a>
+					<a href="index.html">Home</a>
 					|
-					<a href="/cryptocurrency.html">Cryptocurrencies</a>
+					<a href="cryptocurrency.html">Cryptocurrencies</a>
 					|
-					<a href="/about-us.html">About</a>
+					<a href="about-us.html">About</a>
 					|
-					<a href="/contact-us.html">Contact</a>
+					<a href="contact-us.html">Contact</a>
 				</p>
 
 				<p class="footer-company-name">© 2021 CryptoX Ltd.</p>
