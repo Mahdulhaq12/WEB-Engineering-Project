@@ -12,7 +12,7 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <img src="logo.png" alt="" class="logo_img" />
+        <!-- <img src="logo.png" alt="" class="logo_img" /> -->
 
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -24,7 +24,16 @@
     </div>
 
     <div class="container">
+
       <form id="contact" action="contactus.php" method="post" >
+
+
+      <div id="error_message">
+     
+  </div>
+
+      <form  action="" id="contact" onsubmit="return validate();">
+
         <h3>Contact-us Form</h3>
         <h4>Contact us for your feedback or for more details</h4>
         <fieldset>
@@ -36,7 +45,9 @@
             id="name"
             name="name"
             autofocus
-            class="input-class"
+            class="name"
+            id="name"
+            
           />
         </fieldset>
         <fieldset>
@@ -47,7 +58,8 @@
             id="email"
             name="email"
             required
-            class="input-class"
+            class="email"
+            id="email"
           />
         </fieldset>
         <fieldset>
@@ -57,8 +69,13 @@
             tabindex="3"
 			name="phone"
             required
+
             class="input-class"
 			name="phone"
+
+            class="phone"
+            id="phone"
+
           />
         </fieldset>
 
@@ -71,6 +88,7 @@
             id="message"
             class="input-class"
             style="height: 200px;"
+            id="message"
           ></textarea>
         </fieldset>
 
@@ -82,17 +100,30 @@
         </fieldset>
 
         <fieldset>
+
           
           <input type="submit" name="submit" id="submit-contact" style="border-radius:50px; width: 100px; height: 50px; background-color: rgb(12, 241, 12);  font-style: bold;">
               
           
           </fieldset>
+
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            
+            style="border-radius: 50px;"
+            
+          >
+            Submit
+          </button>
+
       </form>
     </div>
     <footer class="footer-distributed">
 
 			<div class="footer-left">
-          <img src="img/logo.png">
+          <!-- <img src="img/logo.png"> -->
 				<h3>About<span>CryptoX</span></h3>
 
 				<p class="footer-links">
