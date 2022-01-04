@@ -305,6 +305,7 @@ footer {
   .images3d:hover img:nth-child(4) {
     transform: translate(-40px, 40px);
     opacity: 1;
+    cursor: pointer;
   }
   .images3d:hover img:nth-child(3) {
     transform: translate(-30px, 30px);
