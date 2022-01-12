@@ -16,6 +16,8 @@ header {
 }
 body {
     background-color: #551ec2;
+    background-image: url("https://www.wallpapertip.com/wmimgs/237-2377035_cryptocurrency-wallpaper.jpg" );
+    color: gold;
 }
 
 
@@ -104,18 +106,19 @@ ul li a:hover {
 .pic {
     float: right;
     position: relative;
-    top: 160px;
-    right: -300px;
+    top: 140px;
+    right: -400px;
 }
 
 .pic {
 
-    width: 320px;
-    height: 320px;
+    width: 450px;
+    height: 450px;
     border-radius: 1000px;
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 100s linear infinite;
+   
 }
 
 @-moz-keyframes spin {

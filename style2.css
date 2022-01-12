@@ -9,11 +9,11 @@
 }
 body{
     background-color: #551ec2;
+    line-height: 30px;
+    background-image: url("https://www.wallpapertip.com/wmimgs/237-2377035_cryptocurrency-wallpaper.jpg" );
+    
 }
 
-.navbar{
-    background-color: #551ec2;
-}
 ul {
     float: right;
     list-style: none;
@@ -211,20 +211,6 @@ footer {
     margin-bottom: 5px;
 }
 
-
-
-
-
-
-
-body {
-    
-    
-    line-height: 30px;
-    color: #777;
-    background: #551ec2;
-}
-
 .container {
     max-width: 400px;
     width: 100%;
@@ -242,7 +228,7 @@ body {
 }
 
 #contact {
-    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    background-image: linear-gradient(to top, #686b3a 0%, #c0bd1d 100%);
     padding: 25px;
     margin: 150px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -266,18 +252,6 @@ body {
     color: rgb(29, 28, 28);
 }
 
-#contact-submit{
-
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
-}
 
 fieldset {
     border: medium none !important;
@@ -326,6 +300,7 @@ fieldset {
     border-radius:50px;
      width: 100px; 
      height: 50px;
-      background-color: rgb(12, 241, 12);  
-      font-style: bold;
+     color: white;
+     background-image: linear-gradient(to top, #3a3912 0%, #dfd217 100%);  
+      font-weight: bold;
 }
