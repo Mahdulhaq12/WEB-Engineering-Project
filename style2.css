@@ -11,6 +11,7 @@ body{
     background-color: #551ec2;
     line-height: 30px;
     background-image: url("https://www.wallpapertip.com/wmimgs/237-2377035_cryptocurrency-wallpaper.jpg" );
+    background-size: 100% 90%;
     
 }
 
@@ -302,6 +303,7 @@ fieldset {
      width: 100px; 
      height: 50px;
      color: white;
-     background-image: linear-gradient(to top, #3a3912 0%, #dfd217 100%);  
+     /* background-image: linear-gradient(to top, #3a3912 0%, #dfd217 100%);   */
+     background-image: linear-gradient(120deg, #7da2f8 0%, #f5686c 100%);
       font-weight: bold;
 }

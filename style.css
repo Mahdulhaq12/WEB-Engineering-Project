@@ -18,6 +18,7 @@ body {
     background-color: #551ec2;
     background-image: url("https://www.wallpapertip.com/wmimgs/237-2377035_cryptocurrency-wallpaper.jpg" );
     color: gold;
+    background-size: 100% 90%;
 }
 
 
@@ -100,6 +101,7 @@ ul li a:hover {
     border-radius: 30px;
 
     background-image: linear-gradient(to right, #669ce6, #b667dd, #f530c9);
+    
     color: white
 }
 
