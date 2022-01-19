@@ -121,7 +121,7 @@ else
 
     $stmp->bind_param("sssss",$Name,$Email,$Phone,$Message,$Notification);
     $stmp->execute();
-    echo ("<p><h2> your message has been  delivered sucessfully</h2> </p>");
+    echo ("<p><h2> your message was  delivered sucessfully</h2> </p>");
    
 }
 
