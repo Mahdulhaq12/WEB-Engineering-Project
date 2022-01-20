@@ -16,8 +16,7 @@
     <link rel="shortcut icon" href="Images/favicon/contactus.ico" type="image/x-icon">
 	<link rel="stylesheet" href="contactus.css">
 
-	    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11">
-		</script>
+	    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	
 
     <title>Contact Us</title>
@@ -243,9 +242,9 @@
 			</div>
 		</footer>
 </body>
-<script>
+<!-- <script>
 	Swal.fire(  'Yur Message has been delivered successfully');
-</script>
+</script> -->
 </html>
 
 <?php
@@ -271,7 +270,9 @@ else
 
     $stmp->bind_param("sssss",$Name,$Email,$Phone,$Message,$Notification);
     $stmp->execute();
-    echo ("<p><h2> your message was  delivered sucessfully</h2> </p>");
+    echo ("<script>
+	Swal.fire(  'Yur Message has been delivered successfully');
+</script>");
    
 }
 
